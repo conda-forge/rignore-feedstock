@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.7.6"
+  version: "0.8.0"
 
 package:
   name: rignore
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/rignore/rignore-${{ version }}.tar.gz
-  sha256: 00d3546cd793c30cb17921ce674d2c8f3a4b00501cb0e3dd0e82217dbeba2671
+  sha256: 2e5ad6b19834f04a877d26fe863fd77ed851ed4019fdca097fb1b744311e3562
 
 build:
-  number: 1
+  number: 0
   skip: is_abi3 and not is_python_min
   python:
     version_independent: ${{ is_abi3 }}
